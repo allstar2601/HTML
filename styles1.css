@@ -1,0 +1,85 @@
+
+
+
+body {
+background-image: url("htmlbild1.Jpg");
+background-position: right top;
+background-repeat: no-repeat;
+background-color:white;
+font-size:100%;
+}
+
+h2 , h4{
+	text-decoration: underline;
+	text-transform : uppercase;
+	letter-spacing: 12px;
+	word-spacing: 15px;
+	font-style : italic;
+	font-size: 2.0em;
+}
+h1 { /*überschrift damit man auto verwenden kann muss man die breite angeben*/
+/*	border-style: solid; */
+	border-radius: 15px;
+	border: 1px solid red;
+	width: 300px;
+	
+	margin-top: 50px;
+	margin-bottom: 20px;
+	margin-left: 100px;
+	margin-right: 20px;
+	
+	
+	outline-width: 20px;
+	outline-style: solid;
+	outline-color: blue;
+	
+}
+h3{
+	text-decoration: none;
+	text-indent: 50px;
+	margin-left: 70px;
+	letter-spacing: 12px;
+	
+}
+
+/*body {
+	background-color : blue;
+}*/
+p{ /* spricht alle paragrafen an*/
+	
+	border-style: solid;
+	border-width: 5px;
+	border-color: green;
+	border-radius: 5px;
+	line-height: 3.5;
+	text-shadow: 13px 12px red;
+	
+	
+	
+	margin-left: 100px;
+}
+/*h1, h2 ,h4{
+	color : grey;
+}*/
+.bordergreen{
+border-style: solid;
+ border-color: black;
+background-color: yellow;
+color: blue;
+}
+.border{
+ border-style: solid;
+ border-color: black;
+
+}
+.rot {
+	color : red;
+}
+.hervor{
+	background : yellow;
+}
+
+#P12 {
+background-color : green;
+}
+/* von der klasse wird die farbe verändert da der Paragraph stärker ist (den namen der id kann man selbst festlegen*/
