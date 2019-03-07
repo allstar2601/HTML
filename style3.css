@@ -1,0 +1,43 @@
+
+body {
+    background-image: url(34637-tolle-natur-hintergrundbilder-hd-1920x1080-fuer-iphone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+    border-radius: 8px;
+    padding:5px; /*abstand zum unteren*/
+}
+ul{
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:darkgray;
+    position: -webkit-sticky; /*fixiert es am top*/
+    position: sticky;
+    top:0;
+    width: 100%;
+}
+li {
+    /*display:inline;*/
+    float:left;
+}
+
+li a{ /*bestimmt wie der Text verteilt werden soll bzw auszusehen hat*/
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 17px 20px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) { /* beim drüberfahren bzw beim nicht benutzen*/
+    background-color:aliceblue;
+}
+.active {
+    background-color:darkorange;
+}
+
