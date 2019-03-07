@@ -1,0 +1,65 @@
+<html>
+
+<link rel='stylesheet' href = "style3.css">
+<head>
+    <!-- java script auch da möglich -->
+    
+<title>First Webpage</title>
+    </head>
+    
+    <body>
+    
+        <img src=" htlinn.PNG " alt ="HTL"
+             style="width:150px;height:150px;">
+        
+        <ul>
+        <li><a href = "https://htl-anichstrasse.tirol/"> Home </a> </li>
+        <li><a href = "#news"> News </a> </li>
+        <li><a href = "#contact"> Contact </a> </li>
+        <li style ="float:right"><a class = "active" a href = "https://htl-anichstrasse.tirol/kontakt/"> About </a> </li>
+        </ul>
+      
+        <h3>Java Script Body</h3>
+        
+        <button type="button" onclick="myfunction()">Klick mich </button>
+       
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        
+        <div id="ausgabe"> <!-- Bereich fpr Innerhmtl--> </div>
+    
+    <script>
+    window.alert("seite ist noch nicht fertig");
+
+    function myfunction()
+    {
+       
+        //objecte , function (this nicht vergessen),for in schleife (nicht für arrays , normale for für arrays)!! arrays usw anschauen !!!!
+        var e = document.getElementById("ausgabe");
+         e.innerHTML = "hello" //" <table> <tr> <td>  a </td> </tr> </table> " // um nach funktion was einzubauen (innerhtml)
+        
+        //beschreibt die CSS
+        e.classList.remove("rot");
+        e.classList.add("green");
+        e.classList.replace("rot" , "green");
+        
+        //style umändern
+        var e = document.getElementById("id1");
+        e.style.color = "green";
+        e.style.marginTop= '15px'; 
+        // e.style.backgroundColor='blue';
+        
+        // var compstyle = window.getComputedstyke (e,null) zeigt an wie das Element jz wrkll ausschaut
+        //alert(compStyle.width)
+    }
+                /* onclick gibts auch für paragrafen etc
+        document.write("My First document write"); */
+       /* document.getElementById("demo").innerHTML= "My First JavaScript" */
+        
+    </script>
+      <p id="id1" class="rot fett"> </p>
+        
+        <p id="id1" class="fett green"> </p>
+    </body>
+
+</html>
