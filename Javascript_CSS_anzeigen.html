@@ -1,0 +1,118 @@
+<html>
+
+<body>
+    
+    <button type="button" id='btn1' onclick="anzeigen('b1')"style ='background-color:green'>Klick mich</button>
+    <button type="button" id='btn2' onclick="anzeigen('b2')">Klick mich2 </button>
+    <button type="button" id='btn3' onclick="anzeigen('b3')">Klick mich3 </button>
+
+    
+    <div id ='b1'>
+        <p> Text 1</p>
+    </div>
+     
+    <div id ='b2' style = 'display:none'>
+        <p> Text 2</p>
+    </div>
+
+    <div id ='b3' style = 'display:none'>
+        <p> Text 3</p>
+    </div>
+
+    <h1 onclick='toggleDisplay("d1")'>UEberschrift 1</h1> 
+    <div id='d1' style = 'display:none'><p>text1 dfffffffffffffffffffffffffffffffffffffffffffff</p></div>
+    <script>
+    
+        
+    
+     function anzeigen(bereich)
+    {
+       //einlesen von IDS
+        var e1= document.getElementById('b1');
+        var e2= document.getElementById('b2');
+        var e3= document.getElementById('b3');
+        
+        var btn1= document.getElementById('btn1');
+        var btn2= document.getElementById('btn2');
+        var btn3= document.getElementById('btn3');
+        
+        if(bereich =='b1')
+        {
+        e1.style.display = 'block';    //stellt b1 da (Text1)
+        e2.style.display = 'none';
+        e3.style.display = 'none';
+        
+        btn1.style.backgroundColor= 'green';
+        btn2.style.backgroundColor= 'grey';
+        btn3.style.backgroundColor= 'grey';
+        
+        }else if(bereich == 'b2')
+        {
+        e1.style.display = 'none';    
+        e2.style.display = 'block';
+        e3.style.display = 'none';
+            
+        btn1.style.backgroundColor= 'grey';
+        btn2.style.backgroundColor= 'green';
+        btn3.style.backgroundColor= 'grey';
+        
+        }
+    
+    }
+        function toogleDisplay(bereich)
+        {
+        //aufklappbare Seite 
+        var e = document.getElementById(bereich);
+        var isNotVisible = e.style.display == ' none '; //abfrage
+        
+        if(isNotVisible)
+        {
+            e.style.display='block';
+        }else{
+            e.style.display='none';
+        }
+        
+     } 
+        
+        
+                
+        /*
+      
+      
+      //CSS =>
+        //objecte , function (this nicht vergessen),for in schleife (nicht für arrays , normale for für arrays)!! arrays usw anschauen !!!!
+        var e = document.getElementById("ausgabe");
+        e.innerHTML = "hello" //" <table> <tr> <td>  a </td> </tr> </table> " // um nach funktion was einzubauen (innerhtml)
+        
+        //beschreibt die CSS
+        e.classList.remove("rot");
+        e.classList.add("green");
+        e.classList.replace("rot" , "green");
+        
+        //style umändern
+        var e = document.getElementById("id1");
+        e.style.color = "green";
+        e.style.marginTop= '15px'; 
+        // e.style.backgroundColor='blue';
+        // background-color => backgroundcolor
+        // var compstyle = window.getComputedstyke (e,null) zeigt an wie das Element jz wrkll ausschaut (welche aktiv sind)
+        //alert(compStyle.width) */
+    
+        /* onclick gibts auch für paragrafen etc
+        document.write("My First document write"); */
+    
+    
+    
+    
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    </body>
+
+
+</html>

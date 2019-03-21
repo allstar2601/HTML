@@ -1,0 +1,38 @@
+<html>
+
+<script>
+    
+    
+    <body>
+    
+    var arr = [];
+    arr.push({name:'asdf', tel:'12345'});
+    <div id="ausgabe">
+    
+    </div>
+    Function anzeigen() 
+    {
+    // Stelle das 'arr' als Liste im div mit id 'ausgabe' dar
+        var str = "<ul>";
+        var i;
+        for(i = 0; i < arr.length, i++)
+        {
+            var zeile = arr[i];
+            var attr;
+            str = str + "<li>";
+            for(attr in zeile)
+            {
+            //    var nameDesattr=attr;
+                var wertdesattr= zeile[attr];
+                str = str + " " + wertdesattr;
+            }
+            
+            str = str + "</li>";
+        }
+        str = str + "</ul>";  
+        document.getElementById('ausgabe').innerHTML = str;
+    } // das ganze geht mit table auch
+</script>
+
+    </body>
+</html>
