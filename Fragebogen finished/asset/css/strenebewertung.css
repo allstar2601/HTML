@@ -1,0 +1,109 @@
+/* Sternebewertung */
+
+span#Bewertung {
+    line-height: 45px;
+}
+
+span.sternebewertung,
+span.sternebewertung2,
+span.sternebewertung3,
+span.sternebewertung4,
+span.sternebewertung5{
+    float: Left;
+}
+
+span.sternebewertung:not(:checked) > input,
+span.sternebewertung2:not(:checked) > input,
+span.sternebewertung3:not(:checked) > input,
+span.sternebewertung4:not(:checked) > input,
+span.sternebewertung5:not(:checked) > input {
+    display: None;
+}
+
+span.sternebewertung:not(:checked) > label,
+span.sternebewertung2:not(:checked) > label,
+span.sternebewertung3:not(:checked) > label,
+span.sternebewertung4:not(:checked) > label,
+span.sternebewertung5:not(:checked) > label {
+    float: Right;
+    width: 1.3em;
+    padding: 0 .1em;
+    overflow: Hidden;
+    white-space: Nowrap;
+    cursor: Pointer;
+    font-size: 200%;
+    line-height: 1.2;
+    color: #D0D0D0;
+    text-shadow: 1px 1px #B0B0B0, 2px 2px #606060, .1em .1em .2em rgba(0,0,0,.5);
+    transition: all .5s;
+}
+
+span.sternebewertung:not(:checked) > label:before,
+span.sternebewertung2:not(:checked) > label:before,
+span.sternebewertung3:not(:checked) > label:before,
+span.sternebewertung4:not(:checked) > label:before,
+span.sternebewertung5:not(:checked) > label:before {
+    content: '★';
+}
+
+span.sternebewertung > input:checked ~ label,
+span.sternebewertung2 > input:checked ~ label,
+span.sternebewertung3 > input:checked ~ label,
+span.sternebewertung4 > input:checked ~ label,
+span.sternebewertung5 > input:checked ~ label {
+    color: #4A96D2;
+    text-shadow: 1px 1px #C06000, 2px 2px #904000, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+span.sternebewertung:not(:checked) > label:hover,
+span.sternebewertung:not(:checked) > label:hover ~ label,
+
+span.sternebewertung2:not(:checked) > label:hover,
+span.sternebewertung2:not(:checked) > label:hover ~ label,
+
+span.sternebewertung3:not(:checked) > label:hover,
+span.sternebewertung3:not(:checked) > label:hover ~ label,
+
+span.sternebewertung4:not(:checked) > label:hover,
+span.sternebewertung4:not(:checked) > label:hover ~ label,
+
+span.sternebewertung5:not(:checked) > label:hover,
+span.sternebewertung5:not(:checked) > label:hover ~ label
+
+{
+    color: #4A96D2;
+    text-shadow: 1px 1px #4A96D2, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+span.sternebewertung > input:checked + label:hover,
+span.sternebewertung > input:checked + label:hover ~ label,
+span.sternebewertung > input:checked ~ label:hover,
+span.sternebewertung > input:checked ~ label:hover ~ label,
+span.sternebewertung > label:hover ~ input:checked ~ label,
+
+span.sternebewertung2 > input:checked + label:hover,
+span.sternebewertung2 > input:checked + label:hover ~ label,
+span.sternebewertung2 > input:checked ~ label:hover,
+span.sternebewertung2 > input:checked ~ label:hover ~ label,
+span.sternebewertung2 > label:hover ~ input:checked ~ label,
+
+span.sternebewertung3 > input:checked + label:hover,
+span.sternebewertung3 > input:checked + label:hover ~ label,
+span.sternebewertung3 > input:checked ~ label:hover,
+span.sternebewertung3 > input:checked ~ label:hover ~ label,
+span.sternebewertung3 > label:hover ~ input:checked ~ label,
+
+span.sternebewertung4 > input:checked + label:hover,
+span.sternebewertung4 > input:checked + label:hover ~ label,
+span.sternebewertung4 > input:checked ~ label:hover,
+span.sternebewertung4 > input:checked ~ label:hover ~ label,
+span.sternebewertung4 > label:hover ~ input:checked ~ label,
+
+span.sternebewertung5 > input:checked + label:hover,
+span.sternebewertung5 > input:checked + label:hover ~ label,
+span.sternebewertung5 > input:checked ~ label:hover,
+span.sternebewertung5 > input:checked ~ label:hover ~ label,
+span.sternebewertung5 > label:hover ~ input:checked ~ label{
+    color: #1771b8;
+    text-shadow: 1px 1px #1771b8, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}

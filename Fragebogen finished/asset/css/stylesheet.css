@@ -1,0 +1,65 @@
+table,
+th,
+td {
+	margin-left: 0px border: 1px;
+	border-style: solid;
+}
+
+th,
+td {
+	padding: 8px;
+	text-align: center;
+}
+
+button {
+	text-align: center;
+	background: white;
+}
+
+.Spalten {
+	height: 50;
+	box-sizing: border-box;
+	width: 145;
+}
+
+table {
+	table-layout: auto;
+
+}
+
+.Überschriften {
+	margin-top: 50;
+	font-size: 20;
+}
+
+.Abstand {
+	margin-top: 20;
+}
+
+.Emojis {
+	font-size: 25;
+}
+
+.Abstandlinks {
+	margin-left: 50;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+/*  position: absolute; */
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+ /* cursor: pointer;*/
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  border: 2px groove #09D4FF;
+	border-radius: 15px;
+	border-width: 1,5px
+}
